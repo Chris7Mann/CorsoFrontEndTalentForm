@@ -10,18 +10,87 @@
     <h1>FORM</h1>
     <h2>Modulo di iscrizione ai corsi TF</h2>
     <form action="" method="get">
-        <div>
-            <label for="nome"></label>
-            <input type="text" name="firstname" id="nome" placeholder="Nome" autofocus>
-            <label for="surname"></label>
-            <input type="text" name="surname" id="surname" placeholder="Cognome">
-        </div>
-        <div>
-            <label for="mail"></label><br>
-            <input type="email" name="mail" id="mail" placeholder="La tua mail">
-        </div>
-        
-        <input type="submit" value="Iscriviti">
+        <input type="hidden" name="from" id="from" value="paginax">
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <div>
+                <label for="nome"></label>
+                <input type="text" name="firstname" id="nome" placeholder="Nome" autofocus>
+                <label for="surname"></label>
+                <input type="text" name="surname" id="surname" placeholder="Cognome">
+            </div>
+            <div>
+                <label for="mail"></label><br>
+                <input type="email" name="mail" id="mail" placeholder="La tua mail">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="La tua password">
+            </div>
+
+            <div>
+                <label for="eta">La tua età</label>
+                <input type="number" name="eta" id="eta" min="18" max="35">
+                <label for="nascita"> Data di nascita</label>
+                <input type="date" name="nascita" id="nascita">
+            </div>
+            <div>
+                
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferenze Corso</legend>
+            <div>
+                <span>seleziona livello</span><br><br>
+                <input type="radio" name="livello" id="base" value="b">
+                <label for="base">Base</label>
+                <input type="radio" name="livello" id="intermedio" value="i" checked>
+                <label for="intermedio ">Intermedio </label>
+                <input type="radio" name="livello" id="avanzato" value="a">
+                <label for="avanzato ">Avanzato </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Check button</legend>
+            <span>Linguaggi</span><br><hr>
+            <input type="checkbox" name="linguaggio" value="html" id="html">
+            <label for="html">Html</label><br>
+            <input type="checkbox" name="linguaggio" value="css" id="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="linguaggio" value="js" id="js" checked>
+            <label for="js">JS</label><br>
+            <input type="checkbox" name="linguaggio" value="php" id="php" checked>
+            <label for="php">php</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Menu a tendina</legend>
+            <span></span>
+            <label for="giorno">giorno preferito</label>
+            <select name="giorno" id="giorno">
+                <option value="" selected>Scegli il giorno</option>
+                <option value="lu">Lunedi</option>
+                <option value="ma">Martedi</option>
+                <option value="me">Mercoledi</option>
+                <option value="gio">Giovedi</option>
+                <option value="ve">Venerdi</option>
+                <option value="sa">Sabato</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Menu a tendina multipli</legend>
+            <label for="orario">Fascia Oraria</label>
+            <select name="orario" id="orario" multiple size="1">
+                <option value="">Scegli una fascia oraria</option>
+                <option value="mattina">9-12</option>
+                <option value="pomeriggio">15-18</option>
+                <option value="sera">20-23</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>TextArea</legend>
+            <label for="note"></label>
+            <textarea name="note" id="note" cols="50" rows="5"></textarea>
+        </fieldset>
+        <input type="submit" value="Iscriviti" disabled>
+        <input type="reset" value="reset">
     </form>
 </body>
 </html>
