@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liste</title>
+    </head>
+
+    <body>
+        <h1>LE LISTE</h1>
+
+        <!-- LISTE NON ORDINATE -->
+        <h2>Liste non ordinate (tag ul)</h2>
+        <h3>N.B. I figli diretti delle liste non ordinate possono essere solo tag li</h3>
+
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <!-- LISTE ORDINATE -->
+        <h2>Liste ordinate (tag ol)</h2>
+        <h3>N.B. I figli diretti delle liste ordinate possono essere solo tag li</h3>
+
+        <ol type="a" reversed>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ol>
+
+
+        <!-- LISTE DI DEFINIZIONE -->
+        <h2>Liste di definizione</h2>
+        <dl>
+            <dt>HTML</dt><!--definition term-->
+            <dd>Hypertext Markup Language</dd><!--definition description-->
+            <dd>Il linguaggio standard per la creazione di pagine web</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dd>Linguaggio utilizzato per definire lo stile e la formattazione delle pagine web</dd>
+            <dt>Javascript</dt>
+            <dd>Linguaggio di programmazione che rende interattiva una pagina web</dd>
+        </dl>
+
+        <!-- LISTE ANNIDATE -->
+        <h2>Liste annidate</h2>
+        <p>I nostri cantanti preferiti</p>
+        <ul><!-- lista esterna -->
+            <li>Robert Plant
+                <ol><!-- lista interna di Robert Plant -->
+                    <li>Big Log
+                        <!-- <ul>
+                            <li>1983</li>
+                        </ul> -->
+                    </li>
+                    <li>In the Mood</li>
+                    <li>Tall Cool One</li>
+                </ol>
+            </li>
+            <li>Queen
+                <ol>
+                    <li>We will rock you</li>
+                    <li>We are the champions</li>
+                    <li>Radio Gaga</li>
+                </ol>
+            </li>
+            <li>Pino Scotto
+                <ol>
+                    <li>Talking trash</li>
+                    <li>E' morta la città</li>
+                    <li>Don't waste your time</li>
+                </ol>
+            </li>
+        </ul><!-- fine lista esterna -->
+
+    </body>
+
+</html>

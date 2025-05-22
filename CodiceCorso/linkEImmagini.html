@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Link e immagini</title>
+    </head>
+
+    <body>
+        <h1>LINK E IMMAGINI</h1>
+        <!-- LINK -->
+        <h2>Link (tag a) - Sono di tipo inline</h2>
+        <h3>Attributo href che serve per indicare dove deve portare il link</h3>
+        <ul><!-- inizio lista link -->
+            <li>
+                <h4>Link che porta a una pagina interna al sito aprendola nella stessa scheda del browser</h4>
+                <a href="liste.html">Liste html</a>
+                <a href="headings.html">Intestazioni html</a>
+                <!-- Nota come i due link si dispongono uno di fianco all'altro perchè sono inline -->
+            </li>
+
+            <li>
+                <h4>Link che porta a una pagina interna al sito aprendola in una nuova scheda del browser
+                    (target="_blank")</h4>
+                <a href="esercizioListeEFormattazioneCorretto.html" target="_blank">Esercizio Liste e formattazioni</a>
+            </li>
+            <li>
+                <h4 id="esterno">Link che porta a una pagina esterna al sito</h4>
+                <p>N.B. generalmente i link esterni si fanno aprire in una nuova scheda del browser</p>
+                <a href="https://www.raffaelegaito.com/" target="_blank">Sito di Raffaele Gaito</a>
+            </li>
+            <li>
+                <h4>Link che ricarica la pagina (href="#")</h4>
+                <a href="#">Ricarica pagina</a>
+            </li>
+            <li>
+                <h4>Link che riporta all'inizio della pagina (href="#top")</h4>
+                <a href="#top">Torna
+                    all'inizio</a><!--vedi come esempio https://www.start2impact.it/ icona in basso a sinistra-->
+            </li>
+            <li>
+                <h4>Link bookmark o segnaposto (portano a una sezione di una pagina. href="#nomeId")</h4>
+                <p>Questo tipo di link è molto usato nei siti onepage</p>
+                <p>Immaginiamo di volerci spostare alla sezione "link che porta a una pagina esterna al sito</p>
+                <ol>
+                    <li>Aggiungo l'attributo id=nomeId alla sezione a cui voglio andare</li>
+                    <li>Nell'attributo href del link segnaposto metto #nomeId</li>
+                </ol>
+                <a href="#esterno">Sezione link esterni</a>
+                <a href="https://www.armarist.it/#block-821f7748ae25427997b0c3681168e185">Ristoranti armarist</a>
+                <a href="esercizioListeEFormattazioneCorretto.html#formattazioniNonFrequenti">Formattazioni non
+                    frequenti</a>
+                <a href="https://webtea.it/#method-1">WebTea Progettazione</a>
+            </li>
+            <li>
+                <h4>Link che permette di chiamare direttamente un numero telefonico (href="tel:numeroTelefonico")</h4>
+                <a href="tel:+393406405152">Chiama Fulvia</a>
+            </li>
+            <li>
+                <h4>Link che apre il client di posta predefinito con il destinatario/i già impostato/i (href="Mailto:
+                    indirizzoEmail")</h4>
+                <a href="mailto:fubino@gmail.com, fubino2@gmail.com">Scrivici</a>
+            </li>
+            <li>
+                <h4>Link che permette di iniziare una chat su whatsapp (href="https://wa.me/numeroTelefono")</h4>
+                <a href="https://wa.me/+393406405152">Chatta con il nostro assistente</a>
+            </li>
+        </ul><!-- fine lista link -->
+        <!-- IMMAGINI -->
+        <h2>Immagini (tag img) Sono di tipo inline</h2>
+        <h3>attributo src per specificare dove è presente l'immagine</h3>
+        <ul><!-- inizio lista immagini -->
+            <li>
+                <h4>Immagini presenti nel progetto</h4>
+                <img src="ASSETS/MEDIA/montagne.jpg" alt="montagne innevate al tramonto" height="100px">
+                <img src="ASSETS/MEDIA/montagne.jpg" alt="montagne innevate al tramonto" height="100px">
+                <img src="ASSETS/MEDIA/montagne.jpg" alt="montagne innevate al tramonto" height="100px">
+            </li>
+            <li>
+                <h4>Immagini esterne</h4>
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </li>
+            <li>
+                <h4>Anche le immagini possono essere cliccabili (inseriamo il tag img dentro il tag a)</h4>
+                <a href="https://www.sentieridimontagna.it/" target="_blank"><img src="ASSETS/MEDIA/montagne.jpg"
+                        alt="montagne innevate con tramonto" height="100px"></a>
+            </li>
+        </ul><!-- fine lista immagini -->
+
+        <!-- Siti per immagini gratuite
+        https://unsplash.com/it/
+        https://pixabay.com/ 
+        https://www.freepik.com/
+        https://www.pexels.com/it-it/
+        -->
+        <!-- Per comprimere le immagini
+         https://tinypng.com/
+         https://pixlr.com/it/express/
+        -->
+        <!-- Per rimuovere lo sfondo
+          https://www.remove.bg/it/
+         -->
+        <img src="ASSETS/MEDIA/frecciaSu.svg" alt="">
+    </body>
+
+</html>
