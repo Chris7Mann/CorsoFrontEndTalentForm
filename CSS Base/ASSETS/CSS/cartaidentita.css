@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(182, 181, 181);
+    font-family: "Montserrat", sans-serif;
+}
+
+#container{
+    background-color: #fff;
+    margin: 100px auto;
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid #807f7f;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+#card{
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 1rem;
+}
+
+.cardHeader{
+    width: 100%;
+    background-color: #0b39b8;
+    border-radius: 1rem 1rem 0 0;
+    padding: .5rem 0;
+    text-align: center;
+}
+.cardHeader h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cardMain{
+    padding: 2rem;   
+}
+
+.imgCard, .InfoCard{
+    display: inline-block;
+}
+
+.imgCard{
+    border: 2px dashed green;
+    background-color: #cac9c9;
+    margin-right: 20px;  
+}
+#photo{
+    text-align: center;
+    width: 120px;
+    min-height: 150px;
+    line-height: 150px;
+}
+
+#photo:hover{
+    background-color: #807f7f;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.InfoCard {
+    line-height: 2rem;
+    float: right;
+}
+
+.label{
+    color: #0b39b8;
+    font-weight: bold;
+}
+
+.infoRow{
+    line-height: 2rem;
+}
+
+.infoRow span{
+    font-size: 18px;
+}
+
+.cardFooter{
+    width: 100%;
+    background-color: #cccccc;
+    padding: .5rem;
+    text-align: end;
+    border-radius: 0 0 1rem 1rem;
+}
