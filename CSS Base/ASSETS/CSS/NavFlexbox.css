@@ -3,12 +3,26 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.topHeader{
+    background-color: #000;
+    padding: 10px 50px; 
+    display: flex;
+    color: #fff;
+}
 
 header{
   display: flex;
   padding: 17px 40px 0 0;
   align-items: center;
   gap: 60px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 0 50px;
 }
 
 header img{
@@ -54,3 +68,60 @@ header img{
 #sx{
     flex-grow: 1;
 }
+
+/* Hero section */
+
+.hero{
+    height: 100vh;
+    background-image: url(../MEDIA/HeroCover.jpg);
+    background-color: #06333b;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+ 
+}
+
+
+.boxInfo{
+    width: 60vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    gap: 12px;
+    
+}
+
+.boxInfo h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.boxInfo h4{
+    font-size: 2.5rem;
+}
+
+.boxInfo p{
+    font-size: 1.2rem;
+}
+
+.btn{
+    background: #000;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+

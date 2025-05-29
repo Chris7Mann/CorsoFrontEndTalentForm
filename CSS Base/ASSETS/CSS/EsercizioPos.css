@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    height: 2000px;
+    top: 100px;
+}
+.top-header{
+    background-color: aqua;
+    height: 20px;
+    width: 100%;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #333;
+    position: sticky;
+    top: 0px;
+}
+
+
+.feedback{
+    width: 40px;
+    height: 150px;
+    background-color: blueviolet;
+    position: fixed;
+    top: calc(50vh - 75px);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    border: 2px dashed rgb(167, 101, 228);
+}
+
+span{
+    color: rgb(240, 181, 230);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* writing-mode: vertical-rl; */
+    transform: rotate(90deg);
+}

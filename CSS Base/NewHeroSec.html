@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ASSETS/CSS/NewHeroSec.css">
+    <title>Nav Flexbox - Hero Migliorata</title>
+  </head>
+  <body>
+    <div class="topHeader"><span>Questa è la top header</span></div>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="ASSETS/MEDIA/logoRoma.jpg" height="60px" alt="Logo Roma" />
+        </a>
+      </div>
+      <nav id="sx">
+        <ul>
+          <li><a href="#">Visita</a></li>
+          <li><a href="#">Oggi a palazzo</a></li>
+          <li><a href="#">Esplora</a></li>
+          <li><a href="#">Laboratorio d'arte</a></li>
+          <li><a href="#">Membership</a></li>
+        </ul>
+      </nav>
+      <nav id="dx">
+        <ul>
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">Tickets D&G</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="hero-content">
+          <div class="boxInfo">
+            <h1>Palazzo Esposizioni</h1>
+            <h4>Scopri l'arte contemporanea nel cuore di Roma</h4>
+            <p>
+              Immergiti in un'esperienza culturale unica dove arte, storia e innovazione si incontrano. 
+              Le nostre esposizioni offrono uno sguardo privilegiato sui più grandi artisti contemporanei 
+              e sulle tendenze culturali che stanno definendo il nostro tempo.
+            </p>
+            <a href="#" class="btn">Scopri le mostre</a>
+          </div>
+          
+          <form class="hero-form">
+            <h3>Prenota la tua visita</h3>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="data">Data visita</label>
+              <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+              <label for="biglietti">Numero biglietti</label>
+              <select id="biglietti" name="biglietti" required>
+                <option value="">Seleziona</option>
+                <option value="1">1 biglietto</option>
+                <option value="2">2 biglietti</option>
+                <option value="3">3 biglietti</option>
+                <option value="4">4 biglietti</option>
+                <option value="5+">5+ biglietti</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="messaggio">Note aggiuntive</label>
+              <textarea id="messaggio" name="messaggio" placeholder="Richieste speciali, gruppi, etc."></textarea>
+            </div>
+            <button type="submit" class="form-btn">Prenota ora</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

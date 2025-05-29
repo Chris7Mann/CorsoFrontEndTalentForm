@@ -8,8 +8,17 @@ body{
     background-color: #dadadc;
 }
 
+#info{
+    width: 100%;
+    height: 100%;
+    background-color: #dadadc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container{
-    padding: 100px;
+    padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,4 +52,24 @@ span.big{
     color: #847770;
     text-transform: uppercase;
     font-family: "Unna", serif;
+}
+
+.no-pet{
+    border-top: 1px dashed #bbbbbb;
+    padding: 20px;
+}
+
+.no-pet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.no-pet img{
+    width: 40px;
+}
+
+.no-pet, .txt{
+    color: #973751;
 }
