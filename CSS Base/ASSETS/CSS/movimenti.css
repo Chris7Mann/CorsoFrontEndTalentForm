@@ -41,20 +41,21 @@ figure{
     align-items: center;
 }
 
-figure span{
+figure:hover{
+    opacity: 0.8;
+}
+
+figure i{
     font-size: 30px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: #000000;
     border: 3px solid #000000;
     border-radius: 50%;
     display: none;
 }
 
-figure:hover{
-    opacity: 0.8;
-}
 
-figure:hover span{
+figure:hover i{
     display: inline-block;
 }
 
@@ -98,6 +99,7 @@ transform: translate(50px, 50px) rotate(45deg) scale(1.2);
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 /* animation title slideDown */

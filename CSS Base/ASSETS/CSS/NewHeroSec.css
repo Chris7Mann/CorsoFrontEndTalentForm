@@ -71,7 +71,7 @@
         flex-grow: 1;
       }
 
-      /* Hero section migliorata */
+      /* Hero section */
       .hero {
         height: 100vh;
         background: linear-gradient(135deg, rgba(6, 51, 59, 0.8), rgba(6, 51, 59, 0.6)), url('../MEDIA/HeroCover.jpg');
@@ -105,7 +105,7 @@
       }
 
       .boxInfo h1 {
-        font-size: clamp(3rem, 8vw, 6rem);
+        font-size: 6rem;
         text-transform: uppercase;
         font-weight: 900;
         letter-spacing: -2px;
@@ -113,7 +113,7 @@
       }
 
       .boxInfo h4 {
-        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        font-size: 2.5rem;
         font-weight: 400;
         opacity: 0.9;
         margin-bottom: 10px;
