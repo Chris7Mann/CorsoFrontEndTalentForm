@@ -1,0 +1,40 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.domanda{
+    background-color: #000000ab;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 0;
+    line-height: 2;
+    
+}
+
+@media (max-width: 600px) {
+  p{
+    color: red;
+  }
+}
+
+.immagine{
+    width: 600px;
+}
+
+@media (max-width: 800px) {
+  .immagine{
+    width: 50%;
+  }
+}
+
+ul li{
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+  ul li{
+    display: block;
+  }
+}

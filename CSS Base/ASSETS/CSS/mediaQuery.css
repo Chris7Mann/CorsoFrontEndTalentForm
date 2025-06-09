@@ -1,0 +1,52 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: #333;
+    color: antiquewhite;
+}
+
+.mediaText{
+    display: flex;
+    align-items: center;
+}
+
+.mediaText h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mediaText h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mediaText section,
+.mediaText figure {
+    flex: 1 1 50%;
+}
+
+.mediaText section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaText figure img{
+    width: 100%;
+    vertical-align: top;
+}
+
+@media screen and (width<=768px) {
+    .mediaText{
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+}
