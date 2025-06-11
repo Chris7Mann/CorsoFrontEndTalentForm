@@ -1,0 +1,73 @@
+/**
+ * Array di 60 nomi italiani e internazionali
+ */
+let nomi = [
+    "Marco",
+    "Giulia",
+    "Alessandro",
+    "Sofia",
+    "Francesco",
+    "Chiara",
+    "Lorenzo",
+    "Martina",
+    "Andrea",
+    "Giorgia",
+    "Matteo",
+    "Sara",
+    "Luca",
+    "Federica",
+    "Davide",
+    "Valentina",
+    "Giovanni",
+    "Elisa",
+    "Simone",
+    "Alice",
+    "Roberto",
+    "Eleonora",
+    "Filippo",
+    "Beatrice",
+    "Alberto",
+    "Francesca",
+    "Riccardo",
+    "Ludovica",
+    "Pietro",
+    "Alessia",
+    "Emma",
+    "Noah",
+    "Olivia",
+    "Liam",
+    "Ava",
+    "William",
+    "Isabella",
+    "James",
+    "Sophia",
+    "Benjamin",
+    "Mia",
+    "Lucas",
+    "Charlotte",
+    "Alexander",
+    "Amelia",
+    "Daniel",
+    "Harper",
+    "Henry",
+    "Evelyn",
+    "Michael",
+    "Abigail",
+    "David",
+    "Emily",
+    "Joseph",
+    "Ella",
+    "Matthew",
+    "Scarlett",
+    "Samuel",
+    "Grace",
+    "John",
+  ];
+
+  console.log(nomi.length);
+
+  let text = 'Diamo il benvenuto a ';
+  
+ for (let i = 0; i < nomi.length; i++) {
+    console.log(text += nomi[i] + ' ');
+ };

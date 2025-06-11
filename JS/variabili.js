@@ -92,3 +92,6 @@ const val1 = 5;
 const val2 = 10;
 const val3 = 15;
 console.log((val1 > 0 || val2 < 20) && val3 >= 10 && val3 <= 20);
+
+
+
