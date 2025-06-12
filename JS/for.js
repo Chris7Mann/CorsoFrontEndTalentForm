@@ -1,5 +1,5 @@
 /**
- * Array di 60 nomi italiani e internazionali
+ * Array di 60 nomi 
  */
 let nomi = [
     "Marco",
@@ -69,5 +69,55 @@ let nomi = [
   let text = 'Diamo il benvenuto a ';
   
  for (let i = 0; i < nomi.length; i++) {
-    console.log(text += nomi[i] + ' ');
+    const nome = nomi[i] ;
+    text += nome + ', ';
  };
+
+console.log(text);
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+let risultato = '';
+
+for (let i = 0; i < 10; i++) {
+   if(i != 3 && i != 7){
+      risultato += i + ', ';
+   }
+} 
+
+console.log(risultato);
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+// ESERCIZI 
+
+//1. Data una stringa e un numero N,  stampa N volte la stringa.
+
+let saluto = 'ciao';
+risultato = '';
+let numb = 4;
+
+for (let i = 0; i < numb; i++) {
+   // console.log(saluto);
+   risultato += saluto + ', ';
+}
+console.log(risultato);
+
+//2. Scrivere un ciclo for che iteri da 0 a 20. Ad ogni iterazione verificherà se il numero è pari o dispari. 
+// Dopo il ciclo stampa nella console le due stringhe seguenti: Numeri pari = 0, 2, 4,… Numeri dispari = 1, 3, 5…
+
+let numeriPari = ''; 
+let numeriDispari = '';
+
+for (let i = 0; i <= 20; i++) {
+   if( i % 2 === 0){
+      numeriPari += i + ', ';
+      
+   }else{
+      numeriDispari += i + ', ';
+   }
+}
+console.log('Pari = ' + numeriPari.slice(0, -2))
+console.log('Dispari = ' +numeriDispari.slice(0, -2))
